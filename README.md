@@ -30,7 +30,7 @@ A coleta será realizada via código de forma automatizada:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 * **Linguagem:** Python
 * **Coleta:** `requests`, `JSON`
 * **Manipulação e Análise:** `pandas`, `numpy`, `matplotlib`, `seaborn`
