@@ -60,7 +60,7 @@ Nosso arquivo final gerou essas colunas abaixo. Aqui vai a explicação do que c
 ## O arquivo final:
 O nosso arquivo `asteroides_10_anos.csv` com todos os dados coletados e tratados tá salvo lá no nosso Drive da equipe. O professor e os colegas podem baixar direto por aqui:
 
-* [🔗 Link pra pasta no Google Drive](https://drive.google.com/drive/folders/1wqkNRG8OlB1cgBnf8aDBQHlKuL2HjB7x?usp=sharing)
+* [Link Google Drive](https://drive.google.com/drive/folders/1wqkNRG8OlB1cgBnf8aDBQHlKuL2HjB7x?usp=sharing)
 
 ---
 
