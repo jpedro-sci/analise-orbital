@@ -7,7 +7,8 @@
 
 ## Equipe
 * **João Pedro da Silva Araújo**
-* **Brenda Letícia do N. Dias** * **Alonso da Costa Sousa Araújo**
+* **Brenda Letícia do N. Dias**
+* **Alonso da Costa Sousa Araújo**
 * **Pedro Lucas Moreira Rolim**
 
 ---
