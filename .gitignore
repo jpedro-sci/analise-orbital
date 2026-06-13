@@ -1,1 +1,3 @@
 .venv/
+.env
+asteroides_10_anos.csv

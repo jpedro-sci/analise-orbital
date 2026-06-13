@@ -2,11 +2,14 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 import time
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Chave de Acesso - Por gentileza não vazar a KEY
 
-API_KEY = "NrsCRcMOs3XYwBTqGDXQt3Fjh2DS2FjK5NFcBfgE"
+API_KEY = os.getenv("NASA_API_KEY")
 URL = "https://api.nasa.gov/neo/rest/v1/feed"
 
 # Hoje até 10 anos atrás
