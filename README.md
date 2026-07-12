@@ -21,7 +21,7 @@ Em vez de só fazer gráficos básicos, o nosso objetivo final é pegar todo ess
 ---
 
 ## Como a gente pegou esses dados?
-Pra não usar planilhas prontas (tipo do Kaggle) que já vêm mastigadas, a gente resolveu ir direto na fonte e puxar tudo da NASA, automatizando pelo código:
+Pra não usar planilhas prontas, a gente resolveu ir direto na fonte e puxar tudo da NASA, automatizando pelo código:
 
 1. **Fonte:** Usamos a API pública oficial deles, chamada NeoWs.
 2. **Problema do Limite:** A API da NASA trava se você pedir muitos dias de uma vez (limite de segurança é de 7 em 7 dias).
