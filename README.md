@@ -16,7 +16,7 @@
 ## Qual é a ideia do projeto?
 Esse é o nosso trabalho para a disciplina. A ideia principal aqui é pegar dados reais de asteroides que cruzam a órbita da Terra (a NASA chama de NEOs) e tentar achar padrões neles.
 
-Em vez de só fazer gráficos básicos, o nosso objetivo final é pegar todo esse histórico de 10 anos e jogar num algoritmo chamado **K-Means**. Como ele agrupa as coisas sozinho (sem a gente dar as respostas), queremos ver se a IA consegue descobrir quem são os asteroides mais perigosos, os maiores, ou os mais rápidos, só olhando pra matemática da coisa.
+Em vez de só fazer gráficos básicos, o nosso objetivo final é pegar todo esse histórico de 10 anos e jogar num algoritmo. Como ele agrupa as coisas sozinho (sem a gente dar as respostas), queremos ver se dá para conseguir descobrir quem são os asteroides mais perigosos, os maiores, ou os mais rápidos, só olhando pra matemática da coisa.
 
 ---
 
@@ -25,13 +25,13 @@ Pra não usar planilhas prontas, a gente resolveu ir direto na fonte e puxar tud
 
 1. **Fonte:** Usamos a API pública oficial deles, chamada NeoWs.
 2. **Problema do Limite:** A API da NASA trava se você pedir muitos dias de uma vez (limite de segurança é de 7 em 7 dias).
-3. **Nossa Solução:** Pra resolver isso de um jeito legal, a gente montou um script em Python usando as bibliotecas `requests` e `datetime`. O código faz um loop que vai avançando de semana em semana e baixando tudo sozinho, montando um histórico gigante de 10 anos em poucos minutos.
-4. **Limpando a sujeira:** O arquivo que a NASA devolve (JSON) vem com muita informação inútil para o objetivo do nosso projeto. Então o próprio script já filtra isso na hora, pega só os números que importam, joga num DataFrame do Pandas e salva um arquivo `.csv` limpinho pra gente usar.
+3. **Nossa Solução:** Pra resolver isso, a gente montou um script em Python usando as bibliotecas `requests` e `datetime`. O código faz um loop que vai avançando de semana em semana e baixando tudo sozinho, montando um histórico gigante de 10 anos em poucos minutos.
+4. **Limpando a sujeira:** O arquivo que a NASA devolve vem com muita informação inútil para o objetivo do nosso projeto. Então o próprio script já filtra isso na hora, pega só os números que importam, joga num DataFrame do Pandas e salva um arquivo `.csv` limpinho pra gente usar.
 
 ---
 
 ## O que tem no nosso arquivo? 
-Nosso arquivo final gerou essas colunas abaixo. Aqui vai a explicação do que cada uma significa na prática:
+Nosso arquivo final gerou essas colunas abaixo:
 
 * **`id`**
   * *O que é:* O código único de registro do asteroide lá no sistema da NASA.
@@ -58,7 +58,7 @@ Nosso arquivo final gerou essas colunas abaixo. Aqui vai a explicação do que c
 ---
 
 ## O arquivo final:
-O nosso arquivo `asteroides_10_anos.csv` com todos os dados coletados e tratados tá salvo lá no nosso Drive da equipe. O professor e os colegas podem baixar direto por aqui:
+O nosso arquivo `asteroides_10_anos.csv` com todos os dados coletados e tratados tá salvo lá no nosso Drive da equipe:
 
 * [Link Google Drive](https://drive.google.com/drive/folders/1wqkNRG8OlB1cgBnf8aDBQHlKuL2HjB7x?usp=sharing)
 
@@ -66,5 +66,5 @@ O nosso arquivo `asteroides_10_anos.csv` com todos os dados coletados e tratados
 
 ## O que a gente tá usando?
 * **Linguagem:** Python
-* **Pra Coletar:** `requests`, `JSON`
-* **Pra Analisar os Dados:** `pandas`, `numpy`, `matplotlib`, `seaborn`
+* **Pra Coletar:** `requests`, `JSON`, `pandas`'
+* **Pra Analisar os Dados (futuramente):** `pandas`, `numpy`, `matplotlib`, `seaborn`
