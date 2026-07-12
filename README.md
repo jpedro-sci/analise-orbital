@@ -21,12 +21,9 @@ Em vez de só fazer gráficos básicos, o nosso objetivo final é pegar todo ess
 ---
 
 ## Como a gente pegou esses dados?
-Pra não usar planilhas prontas, a gente resolveu ir direto na fonte e puxar tudo da NASA, automatizando pelo código:
 
-1. **Fonte:** Usamos a API pública oficial deles, chamada NeoWs.
-2. **Problema do Limite:** A API da NASA trava se você pedir muitos dias de uma vez (limite de segurança é de 7 em 7 dias).
-3. **Nossa Solução:** Pra resolver isso, a gente montou um script em Python usando as bibliotecas `requests` e `datetime`. O código faz um loop que vai avançando de semana em semana e baixando tudo sozinho, montando um histórico gigante de 10 anos em poucos minutos.
-4. **Limpando a sujeira:** O arquivo que a NASA devolve vem com muita informação inútil para o objetivo do nosso projeto. Então o próprio script já filtra isso na hora, pega só os números que importam, joga num DataFrame do Pandas e salva um arquivo `.csv` limpinho pra gente usar.
+Pra não usar planilhas prontas, a gente resolveu ir direto na fonte e puxar tudo da NASA, automatizando pelo código:
+Para este projeto, utilizamos a API pública oficial da NASA, chamada NeoWs, como nossa fonte de dados. O principal obstáculo que encontramos foi o limite de segurança da própria API, que trava as requisições se pedirmos mais de 7 dias de dados de uma vez. Para resolver isso, montamos um script em Python utilizando as bibliotecas requests e datetime. O código faz um loop que avança de semana em semana, baixando tudo sozinho e montando um histórico de 10 anos em poucas horas. Além disso, como o arquivo devolvido pela NASA vem com muitas informações inúteis para o nosso objetivo, o próprio script já faz a limpeza na hora. Ele filtra apenas os números que importam, joga os dados em um DataFrame do Pandas e salva um arquivo .csv limpo e pronto para usarmos.
 
 ---
 
